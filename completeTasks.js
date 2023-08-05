@@ -30,7 +30,7 @@ async function completeTasks(databaseId, date) {
     return notion.pages.properties
       .retrieve({
         page_id: page.id,
-        property_id: page.properties['List'].id,
+        property_id: page.properties['Status'].id,
       })
       .then((property) => {
         return { page, property };
