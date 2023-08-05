@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   schedule:
     # Run every hour
-    - cron: */15 * * * *
+    - cron: '*/15 * * * *'
   push:
     branches:
       - main
